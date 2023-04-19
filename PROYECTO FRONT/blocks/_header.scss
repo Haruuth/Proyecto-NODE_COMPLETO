@@ -1,0 +1,95 @@
+header {
+  background-image: url("https://imagenes.20minutos.es/files/gallery_desktop_default_content/uploads/imagenes/2022/08/02/alicante-chiringuito-la-caleta-en-javea.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.title {
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+
+  @keyframes aparecer {
+    from {
+    opacity: 0; visibility: hidden;  /* El texto comienza invisible */
+    } 
+    to {
+    opacity: 1; visibility: visible; /* El texto termina completamente visible */
+    } 
+  }
+
+
+  h1 {
+    font-family: fantasy;
+    margin-top: 300px;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: aparecer;
+    animation-duration: 7s;
+    letter-spacing: 10px;
+    animation-fill-mode: forwards;
+  }
+
+  h2 {
+    font-family: fantasy;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: aparecer;
+    animation-duration: 7s;
+    letter-spacing: 10px;
+    animation-fill-mode: forwards;
+
+  }
+}
+
+.parrafo {
+  margin-top: 80px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 7s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+
+  
+}
+
+.parrafo_p {
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1730px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.696);
+  line-height: 50px;
+//   border-radius: 50px;
+  border-top: 3px solid white;
+  font-family:fantasy;
+}
+
+.users{
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  cursor: progress;
+}
+.users img{
+  width: 40px;
+  height: 40px;
+}

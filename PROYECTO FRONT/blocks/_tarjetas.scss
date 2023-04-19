@@ -1,0 +1,139 @@
+.tarjeta {
+  flex-wrap: wrap;
+  margin-top: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  width: 100%;
+ 
+  // position: relative;
+  // width: 300px;
+  // height: 200px; 
+  // perspective: 1000px;
+
+}
+.tarjeta_frontal {
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.72);
+  height: 600px;
+  text-align: center;
+
+  }
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // backface-visibility: hidden; 
+  // transition: transform 0.6s ease;
+ 
+  .tarjeta_frontal:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.964);
+  }
+// .tarjeta:hover .tarjeta_frontal{
+//   transform: rotateY(180deg)
+// }
+
+  h3 {
+    padding-top: 20px;
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
+  a {
+    color: black;
+  }
+
+.tarjeta_trasera {
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.72);
+  height: 600px;
+
+  h4{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  ul{
+    font-size: 30px;
+    list-style:circle;
+    line-height: 40px;
+}
+p{
+  font-size: 20px;
+  width: 600px;
+  display: flex;
+  text-align: center;
+}
+
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // backface-visibility: hidden;
+    // transition: transform 0.6s ease;
+    // background-color: #333;
+    // color: #F2F2F2;
+    // transform: rotateY(180deg);
+}
+.tarjeta_trasera:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.964);
+}
+
+// .tarjeta:hover .tarjeta_trasera{
+//   transform: rotateY(0deg)
+// }
+
+.tarjeta_imagen {
+  width: 280px;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.botones{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  // align-items: center;
+
+  a{
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 100px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.447);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  }
+
+.busqueda{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+}
+.buscar{
+  width: 200px;
+  height: 30px;
+}
